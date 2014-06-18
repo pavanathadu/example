@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.min.css">   
+        <link href="jquery.bxslider.css" rel="stylesheet" />  
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+<header class="clearfix">
+    <div class="wrap">
+         <nav class="clearfix table">
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <ul>
+                <li><a  class="active" href="#">Websites</a></li>
+                <li><a href="#">landing Pages</a></li>
+                <li><a href=""><img src="images/logo.png" alt=""></a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Branding</a></li>
+            </ul> 
+            <span><img src="images/menu.png" alt=""></span>
+        </nav>
+    </div>
+</header>
+
+<section class="clearfix">
+    <div class="heading clearfix">
+       <a id="back" href="">back</a>
+       <h2>Chronos website homepage</h2>
+       <ul>
+       <li><a id="prev" href="">&larr;</a></li>
+       <li><a id="next" href="">&rarr;</a></li>
+       </ul>
+    </div>
+    <div class="page_list clearfix">
+      <ul>
+        <li><img src="images/page1.jpg" alt=""></li>
+        <li><img src="images/page2.jpg" alt=""></li>
+      </ul>
+    </div>
+</section>
+<footer class="clearfix">
+    <div class="wrap">  
+    </div>
+</footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script> 
+        <script>
+        $(document).ready(function(){
+          $('nav li a').click(function(){
+            $('nav li a').removeClass('active');
+            $(this).addClass('active')
+          });
+          $(window).scroll(function () {
+            if ($(this).scrollTop() > 154) {
+                $('.heading').addClass('navbar-fixed-top');
+                $('.heading h2').addClass('color');     
+            }
+            else{
+                $('.heading').removeClass('navbar-fixed-top');
+                 $('.heading h2').removeClass('color');
+            }
+          });
+           $('nav span').click(function(){
+              $('nav ul').toggleClass('tog');
+          });
+        });
+        </script>
+    </body>
+</html>

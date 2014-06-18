@@ -1,0 +1,545 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+	margin:0;
+    -webkit-font-smoothing: antialiased;
+     background-color: #22262B;
+     text-align: center;
+     overflow-x: hidden;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+ul{ padding:0; margin:0}
+li{ list-style:none;}
+a{ text-decoration:none;}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+.wrap{ 
+    max-width: 960px;
+    width: 98%;
+    margin: 0 auto; 
+}
+
+header{ 
+    background-color: #22262B;
+    text-align: center;
+    padding: 60px 0 45px 0;
+}
+.logo{ 
+    display: none;
+}
+
+nav{ 
+    position: relative;
+    width:100%;
+    display: table;   
+    margin: 0 auto;
+}
+    nav li{ 
+        float: left; 
+        min-width:6%;
+        margin: 0 4%;
+    }
+    nav li img{
+        margin-top:-12px;
+    }
+        nav a{
+            color: #5f5f5f;
+            font-family: "Montserrat",sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3.75px;
+            transition: all 0.6s ease-out;
+        }          
+        nav a:hover,nav a.active{ 
+            color: #D63D3E; 
+            transition: all 0.6s ease-out;
+        }
+nav span{
+    display: none;
+    cursor: pointer;
+}
+
+.slide{
+    margin-right: 2px;
+}
+.slide img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: -4px;
+}
+.film_roll_prev, .film_roll_next{
+    width: 17.5% !important;
+    height: 100% !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    color: transparent !important;
+    border-radius: 0 !important;
+    border: 0 !important;
+    margin: 0 !important;
+    opacity: 0.5 !important;
+    transition: all 0.3s ease-out;
+}
+.film_roll_prev:hover, .film_roll_next:hover{
+    opacity: 0.7 !important;
+    transition: all 0.3s ease-out;
+}
+.film_roll_prev{
+    left: 0 !important;
+    background: url(../images/prev.png) no-repeat center center #222 !important;    
+}
+.film_roll_next{
+    right: 0 !important;
+    background: url(../images/next.png) no-repeat center center #222 !important;    
+}
+/* ==========================================================================
+   slider
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   second page
+   ========================================================================== */
+
+.heading{
+    position: relative;
+    width: 100%;
+    max-width: 1220px;
+    text-align: center;
+    margin:0 auto;
+    padding: 20px 0;
+    background-color: #000;
+}   
+.heading h2{
+   color: #fff;
+    max-width: 100%;
+    font-family: "Montserrat",sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin:0;
+}
+.navbar-fixed-top{
+    position: fixed;
+    z-index: 1000;
+    top:0;
+    left:0;
+    right: 0;
+    border-top-left-radius:none;
+    border-top-right-radius: none;
+    background-color: #fff;
+    color:#000;
+    width: 100%;
+    max-width: 1220px;
+    text-align: center;
+    margin:0 auto;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+.color{
+   color:#22262B !important; 
+}
+#back{
+   position: absolute;
+   left:0;
+    width:52px;
+    height:15px;
+    color: #878789;
+    margin: 2px 0 0 15px;
+    font-family: "Montserrat",sans-serif;
+    font-size: 12px;
+    background: url('../images/arrow.png') no-repeat 0 center;
+}
+.heading ul{
+    position: absolute;
+    width:54px;
+    right: 0;
+    margin:-23px 15px -18px 0;
+}
+.heading ul li{
+    float: left;
+    margin-right: 10px;
+}
+.heading ul li:nth-child(2){
+    margin-right:0;
+}
+#next{
+    height:15px;
+    color: #878789;
+    font-family: "Montserrat",sans-serif;
+    font-size: 22px;
+}
+#prev{
+    height:15px;
+    color: #878789;
+    font-family: "Montserrat",sans-serif;
+    font-size: 22px;
+}
+.page_list{
+    width: 100%;
+    max-width: 1220px;
+    margin:0 auto;
+}
+.page_list img{
+    width:100%;
+}
+.page_list ul li{
+    margin-bottom:30px;
+}
+.page_list ul li:last-child{
+    margin-bottom:0;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================*/
+
+@media only screen and (max-width : 980px) {
+nav li{
+    min-width: 6%;
+    margin: 0 4%;
+}
+.page_list{
+    width: 100%;
+}
+.heading{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    left:0%;
+    background-color: #000;
+}   
+.navbar-fixed-top{
+    position: fixed;
+    z-index: 1000;
+    top:0;
+    border-top-left-radius:none;
+    border-top-right-radius: none;
+    background-color: #fff;
+    color:#000;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+}
+@media only screen and (max-width : 961px) {
+    nav li{
+    min-width: 6%;
+    margin: 0 3.5%;
+}
+    nav {
+        width:98%;
+    }
+}
+@media only screen and (max-width : 943px) {
+ nav li{
+    min-width: 6%;
+    margin: 0 3.1%;
+}
+    nav {
+        width:95%;
+    }
+
+}
+@media only screen and (max-width : 890px){
+    header{
+        padding: 50px 0 20px 0;
+    }
+.heading{
+    padding:14px 0;
+}
+ nav {
+        width:100%;
+    }
+
+.logo{
+    display: block;
+    position: absolute;
+    top:-35px;
+    left:10%;
+}
+nav span{
+    position: absolute;
+    display: block;
+    top:-28px;
+    right: 10%;
+}
+nav ul li:nth-child(3){
+    display: none;
+} 
+nav ul li{
+    float: none;
+    padding: 15px 10px !important;
+    margin:0;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #ADADAE;
+}
+nav ul li:hover{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    zoom:10px;
+    cursor: pointer;
+    background-color: #000;
+    border-bottom: 1px solid #ADADAE;
+}
+nav ul{
+    position: absolute;
+    top:5px;
+    right: 0;
+    width: 30%;
+    transform: translate3d(100%,0,0);
+    transition: all 0.2s ease-out;
+    float: none;
+    z-index: 1000;
+    margin: 0 -12px 0 0!important;
+    text-align: left !important;
+    border-radius: 3px;
+    border-top-right-radius:none;
+    border-bottom-right-radius:none;
+    border-right: none;
+    border: 1px solid #ADADAE;
+
+}
+.tog{
+    float: none !important;
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    transform: translate3d(0,0,0);
+    transition: all 0.2s ease-out;
+    background-color: #22262B;
+ }
+ .filters {
+margin: 0 !important;
+}
+
+}
+@media only screen and (max-width : 760px){
+    .page_list{
+       margin:46px auto;
+    }
+}
+@media only screen and (max-width : 650px) {
+    nav ul li{
+         padding: 4px 10px !important;
+    }
+
+}
+@media only screen and (max-width : 460px){
+    header{
+        /*padding: 50px 0;*/
+    }
+    .tog{
+        top: 20px;
+    }    
+}
+
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
